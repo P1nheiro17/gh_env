@@ -12,15 +12,15 @@ env:
 
 
 jobs:
+  test:
   #env under test job
   # this will only be available on this level job
-  env:
-    PORT: 8080
-    MONGODB_CLUSTER_ADDRESS: cluster0.15qweeqw.mongodb.net
-    MONGODB_PASSWORD: 123456789
-    MONGODB_USERNAME: maximilian
+    env:
+      PORT: 8080
+      MONGODB_CLUSTER_ADDRESS: cluster0.15qweeqw.mongodb.net
+      MONGODB_PASSWORD: 123456789
+      MONGODB_USERNAME: maximilian
 
-  test:
     environment: testing
     runs-on: ubuntu-latest
     steps:
